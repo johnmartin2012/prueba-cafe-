@@ -162,7 +162,11 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-document.addEventListener('animationend', () => {}, { once: true });
+// Safari iOS fix: position:fixed + target="_blank" can be blocked as popup
+document.querySelector('.whatsapp-btn').addEventListener('click', function (e) {
+  e.preventDefault();
+  window.open(this.href, '_blank', 'noopener,noreferrer');
+});
 
 // Add visible class handling
 const style = document.createElement('style');
