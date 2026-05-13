@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Luna — Especialidad en el Born, Barcelona</title>
+  <meta name="description" content="Café de especialidad en el corazón del Born, Barcelona. Tostado propio, granos de origen, ambiente para quedarse." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav__logo">Café Luna</a>
+    <ul class="nav__links">
+      <li><a href="#historia">Historia</a></li>
+      <li><a href="#cafe">El café</a></li>
+      <li><a href="#carta">Carta</a></li>
+      <li><a href="#espacio">Espacio</a></li>
+      <li><a href="#visita" class="nav__cta">Visítanos</a></li>
+    </ul>
+    <button class="nav__burger" id="burger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg">
+      <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1800&q=80&auto=format&fit=crop" alt="Interior Café Luna" />
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Especialidad · Born · Barcelona</p>
+      <h1 class="hero__title">El tiempo<br /><em>bien tomado</em></h1>
+      <p class="hero__sub">Tostamos nuestros propios granos. Preparamos cada taza con intención.<br />Aquí el café es el principio de todo.</p>
+      <a href="#visita" class="btn btn--light">Encuéntranos</a>
+    </div>
+    <div class="hero__scroll">
+      <span>Descubre</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- HISTORIA -->
+  <section class="historia section" id="historia">
+    <div class="container historia__grid">
+      <div class="historia__img-wrap">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=900&q=80&auto=format&fit=crop" alt="Barista preparando café" />
+        <div class="historia__badge">Est. 2019</div>
+      </div>
+      <div class="historia__text">
+        <p class="eyebrow">Nuestra historia</p>
+        <h2>Un café que nació<br />de una obsesión</h2>
+        <p class="body-lg">Todo empezó con una pregunta sencilla: ¿por qué el café que tomamos cada mañana casi nunca nos dice nada?</p>
+        <p>Marta y Jordi abrieron Café Luna en 2019 en una esquina del Born con la convicción de que el café de especialidad no es un lujo, sino una forma de prestar atención. Trajeron su propio tostador, viajaron a las fincas, aprendieron a escuchar el grano.</p>
+        <p>Hoy, cada café que servimos tiene nombre, origen y una historia detrás.</p>
+        <a href="#cafe" class="btn btn--outline">Conoce el café</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EL CAFÉ -->
+  <section class="cafe-origen section section--dark" id="cafe">
+    <div class="container">
+      <div class="cafe-origen__header">
+        <p class="eyebrow eyebrow--light">De la finca a la taza</p>
+        <h2>El café<br /><em>que tostamos</em></h2>
+      </div>
+      <div class="cafe-origen__grid">
+        <article class="origen-card">
+          <div class="origen-card__icon">○</div>
+          <h3>Origen único</h3>
+          <p>Trabajamos directamente con productores de Etiopía, Colombia y Guatemala. Cada lote es trazable desde la planta.</p>
+        </article>
+        <article class="origen-card">
+          <div class="origen-card__icon">◎</div>
+          <h3>Tostado propio</h3>
+          <p>Tostamos en pequeños lotes en nuestro obrador del Poblenou. Control total sobre el perfil de cada grano.</p>
+        </article>
+        <article class="origen-card">
+          <div class="origen-card__icon">◇</div>
+          <h3>Preparación con rigor</h3>
+          <p>V60, Chemex, AeroPress o espresso según el carácter del grano. Nunca la misma receta para dos cafés distintos.</p>
+        </article>
+        <article class="origen-card">
+          <div class="origen-card__icon">△</div>
+          <h3>Temporada</h3>
+          <p>La carta de cafés cambia con las cosechas. Lo que sirves hoy no existía hace seis meses y no estará mañana.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARTA -->
+  <section class="carta section" id="carta">
+    <div class="container">
+      <div class="carta__header">
+        <p class="eyebrow">La carta</p>
+        <h2>Lo que preparamos</h2>
+        <p class="carta__sub">Una selección honesta. Sin artificios, sin jarabes industriales.</p>
+      </div>
+      <div class="carta__grid">
+        <div class="carta__col">
+          <h3 class="carta__categoria">Cafés</h3>
+          <ul class="carta__lista">
+            <li><span>Espresso</span><span>2,20 €</span></li>
+            <li><span>Cortado</span><span>2,60 €</span></li>
+            <li><span>Flat white</span><span>3,20 €</span></li>
+            <li><span>V60 de temporada</span><span>4,50 €</span></li>
+            <li><span>Chemex para dos</span><span>7,00 €</span></li>
+            <li><span>Cold brew 24h</span><span>4,00 €</span></li>
+          </ul>
+        </div>
+        <div class="carta__col">
+          <h3 class="carta__categoria">Pastelería</h3>
+          <ul class="carta__lista">
+            <li><span>Croissant de mantequilla</span><span>2,80 €</span></li>
+            <li><span>Banana bread con nuez</span><span>3,20 €</span></li>
+            <li><span>Tarta de ricotta y limón</span><span>4,00 €</span></li>
+            <li><span>Galette de manzana</span><span>3,80 €</span></li>
+          </ul>
+        </div>
+        <div class="carta__col">
+          <h3 class="carta__categoria">Otros</h3>
+          <ul class="carta__lista">
+            <li><span>Matcha latte</span><span>4,20 €</span></li>
+            <li><span>Chai de especias</span><span>3,80 €</span></li>
+            <li><span>Zumo de naranja natural</span><span>3,50 €</span></li>
+            <li><span>Agua mineral</span><span>1,50 €</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="carta__nota">Leche de avena, soja y almendras disponibles sin recargo.</p>
+    </div>
+  </section>
+
+  <!-- EL ESPACIO -->
+  <section class="espacio section" id="espacio">
+    <div class="container">
+      <p class="eyebrow">El espacio</p>
+      <h2>Un lugar para quedarse</h2>
+    </div>
+    <div class="espacio__gallery">
+      <div class="espacio__item espacio__item--tall">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80&auto=format&fit=crop" alt="Interior del café" />
+      </div>
+      <div class="espacio__item">
+        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&q=80&auto=format&fit=crop" alt="Detalle taza de café" />
+      </div>
+      <div class="espacio__item">
+        <img src="https://images.unsplash.com/photo-1493857671505-72967e2e2760?w=800&q=80&auto=format&fit=crop" alt="Barra del café" />
+      </div>
+      <div class="espacio__item espacio__item--wide">
+        <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=1200&q=80&auto=format&fit=crop" alt="Ambiente café" />
+      </div>
+      <div class="espacio__item">
+        <img src="https://images.unsplash.com/photo-1507914372368-b2b085b925a1?w=800&q=80&auto=format&fit=crop" alt="Café y libro" />
+      </div>
+    </div>
+    <div class="container">
+      <p class="espacio__caption">Luz natural, madera, cerámica artesanal. Sin pantallas. Sin prisa.</p>
+    </div>
+  </section>
+
+  <!-- DÓNDE ENCONTRARNOS -->
+  <section class="visita section" id="visita">
+    <div class="container visita__grid">
+      <div class="visita__info">
+        <p class="eyebrow">Dónde encontrarnos</p>
+        <h2>En el corazón<br />del Born</h2>
+        <div class="visita__datos">
+          <div class="visita__dato">
+            <span class="visita__dato-label">Dirección</span>
+            <span>Carrer del Rec, 14<br />El Born, Barcelona 08003</span>
+          </div>
+          <div class="visita__dato">
+            <span class="visita__dato-label">Horarios</span>
+            <span>Lunes – Viernes: 8:00 – 20:00<br />Sábado: 9:00 – 21:00<br />Domingo: 9:00 – 18:00</span>
+          </div>
+          <div class="visita__dato">
+            <span class="visita__dato-label">Metro</span>
+            <span>L4 Barceloneta / Jaume I</span>
+          </div>
+          <div class="visita__dato">
+            <span class="visita__dato-label">Contacto</span>
+            <span>hola@cafeluna.es<br />+34 933 00 00 00</span>
+          </div>
+        </div>
+      </div>
+      <div class="visita__mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.6!2d2.1833!3d41.3851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2f4e5e5e5e5%3A0x0!2sCarrer+del+Rec%2C+14%2C+Barcelona!5e0!3m2!1ses!2ses!4v1"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Ubicación Café Luna"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEÑAS -->
+  <section class="resenas section" id="resenas">
+    <div class="container">
+      <p class="eyebrow">Reseñas</p>
+      <h2>Lo que dicen<br /><em>quienes vienen</em></h2>
+      <div class="resenas__estrellas-global">
+        <div class="stars">★★★★★</div>
+        <span>4,9 · 847 reseñas en Google</span>
+      </div>
+    </div>
+    <div class="resenas__track-wrap">
+      <div class="resenas__track" id="resenasTrack">
+
+        <article class="resena-card">
+          <header class="resena-card__header">
+            <div class="resena-card__avatar">AM</div>
+            <div>
+              <strong>Anna M.</strong>
+              <p class="resena-card__meta">Barcelona · hace 3 días</p>
+            </div>
+            <div class="resena-card__stars">★★★★★</div>
+          </header>
+          <blockquote>"El mejor V60 que he tomado en Barcelona, sin duda. El barista me explicó el origen del grano etíope con una pasión que se nota en el resultado. Espacio precioso, luz perfecta para leer. Ya es mi oficina de los martes."</blockquote>
+          <p class="resena-card__source">Google Reviews</p>
+        </article>
+
+        <article class="resena-card">
+          <header class="resena-card__header">
+            <div class="resena-card__avatar">PL</div>
+            <div>
+              <strong>Pablo L.</strong>
+              <p class="resena-card__meta">Madrid · hace 1 semana</p>
+            </div>
+            <div class="resena-card__stars">★★★★★</div>
+          </header>
+          <blockquote>"Vine de visita a Barcelona y me lo recomendó un amigo. Fui dos mañanas seguidas. El flat white es increíble y el banana bread está recién hecho. El ambiente es exactamente lo que esperas de un café del Born: con carácter pero sin postureo."</blockquote>
+          <p class="resena-card__source">Google Reviews</p>
+        </article>
+
+        <article class="resena-card">
+          <header class="resena-card__header">
+            <div class="resena-card__avatar">CG</div>
+            <div>
+              <strong>Clara G.</strong>
+              <p class="resena-card__meta">Barcelona · hace 2 semanas</p>
+            </div>
+            <div class="resena-card__stars">★★★★★</div>
+          </header>
+          <blockquote>"Me encanta que la carta de cafés cambie con la temporada. Esta semana tienen un Yirgacheffe de flores blancas que es una locura. El equipo siempre tiene ganas de explicar qué están sirviendo. Se nota el amor que le ponen."</blockquote>
+          <p class="resena-card__source">Google Reviews</p>
+        </article>
+
+        <article class="resena-card">
+          <header class="resena-card__header">
+            <div class="resena-card__avatar">MS</div>
+            <div>
+              <strong>Marc S.</strong>
+              <p class="resena-card__meta">Barcelona · hace 3 semanas</p>
+            </div>
+            <div class="resena-card__stars">★★★★★</div>
+          </header>
+          <blockquote>"Trabajo desde aquí dos o tres veces por semana. El wifi va bien, nunca te miran mal por quedarte. Pero lo mejor es que el café de verdad lo ponen. Nada de cápsulas ni de marcas genéricas. Aquí saben lo que hacen."</blockquote>
+          <p class="resena-card__source">Google Reviews</p>
+        </article>
+
+        <article class="resena-card">
+          <header class="resena-card__header">
+            <div class="resena-card__avatar">IR</div>
+            <div>
+              <strong>Ingrid R.</strong>
+              <p class="resena-card__meta">Berlín · hace 1 mes</p>
+            </div>
+            <div class="resena-card__stars">★★★★★</div>
+          </header>
+          <blockquote>"I'm from Berlin and this is the best specialty coffee I've found outside Germany. The Chemex was flawless, the pastry was fresh and not too sweet. The space feels honest — no pretension, just good coffee done right. Will be back every time I visit Barcelona."</blockquote>
+          <p class="resena-card__source">Google Reviews</p>
+        </article>
+
+        <article class="resena-card">
+          <header class="resena-card__header">
+            <div class="resena-card__avatar">LF</div>
+            <div>
+              <strong>Laura F.</strong>
+              <p class="resena-card__meta">Barcelona · hace 1 mes</p>
+            </div>
+            <div class="resena-card__stars">★★★★★</div>
+          </header>
+          <blockquote>"Vine con mi madre que no toma café de especialidad y salió convertida. Le prepararon un cortado suave de Colombia y dijo que era el mejor café de su vida. A veces hace falta que alguien te lo explique bien para entenderlo. Gracias, Café Luna."</blockquote>
+          <p class="resena-card__source">Google Reviews</p>
+        </article>
+
+        <article class="resena-card">
+          <header class="resena-card__header">
+            <div class="resena-card__avatar">JO</div>
+            <div>
+              <strong>Joan O.</strong>
+              <p class="resena-card__meta">Barcelona · hace 5 semanas</p>
+            </div>
+            <div class="resena-card__stars">★★★★★</div>
+          </header>
+          <blockquote>"La tarta de ricotta y limón merece una reseña aparte. Pero el café también. Y el espacio también. Uno de esos sitios que hacen que quieras vivir en el Born aunque ya vivas en el Born. Imprescindible."</blockquote>
+          <p class="resena-card__source">Google Reviews</p>
+        </article>
+
+        <article class="resena-card">
+          <header class="resena-card__header">
+            <div class="resena-card__avatar">NB</div>
+            <div>
+              <strong>Núria B.</strong>
+              <p class="resena-card__meta">Gràcia, Barcelona · hace 2 meses</p>
+            </div>
+            <div class="resena-card__stars">★★★★★</div>
+          </header>
+          <blockquote>"Descubrí Café Luna hace seis meses y desde entonces vengo casi cada semana aunque viva en Gràcia. El cold brew de 24h en verano es adictivo. El ambiente es el tipo de calma que necesitas antes de empezar el día."</blockquote>
+          <p class="resena-card__source">Google Reviews</p>
+        </article>
+
+      </div>
+    </div>
+    <div class="resenas__nav">
+      <button class="resenas__btn" id="resenaPrev" aria-label="Anterior">←</button>
+      <div class="resenas__dots" id="resenaDots"></div>
+      <button class="resenas__btn" id="resenaNext" aria-label="Siguiente">→</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <p class="footer__logo">Café Luna</p>
+        <p>Café de especialidad<br />El Born, Barcelona</p>
+        <div class="footer__rrss">
+          <a href="#" aria-label="Instagram">Ig</a>
+          <a href="#" aria-label="TikTok">Tk</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Visítanos</h4>
+        <p>Carrer del Rec, 14<br />08003 Barcelona</p>
+        <p>L–V 8:00–20:00<br />S–D 9:00–21:00/18:00</p>
+      </div>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <p>hola@cafeluna.es</p>
+        <p>+34 933 00 00 00</p>
+      </div>
+      <div class="footer__newsletter">
+        <h4>Suscríbete</h4>
+        <p>Nuevos orígenes, eventos y novedades de temporada.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="tu@email.com" aria-label="Email" />
+          <button type="submit">→</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Café Luna · El Born, Barcelona · Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
