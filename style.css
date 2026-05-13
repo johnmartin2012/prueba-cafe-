@@ -187,15 +187,26 @@ p:last-child { margin-bottom: 0; }
 .hero__bg {
   position: absolute;
   inset: 0;
+  overflow: hidden;
+}
+.hero__bg video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 .hero__overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    160deg,
-    rgba(44,26,14,0.2) 0%,
-    rgba(44,26,14,0.7) 100%
+    to right,
+    rgba(61, 40, 23, 0.45) 0%,
+    transparent 100%
   );
+  z-index: 1;
 }
 
 .hero__content {
