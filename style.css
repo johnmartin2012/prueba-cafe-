@@ -276,6 +276,11 @@ p:last-child { margin-bottom: 0; }
   align-items: center;
 }
 
+@keyframes kenburns {
+  from { transform: scale(1.08); filter: brightness(1.08); }
+  to   { transform: scale(1.0);  filter: brightness(1.0);  }
+}
+
 .historia__img-wrap {
   position: relative;
   aspect-ratio: 4/5;
@@ -283,6 +288,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .historia__img-wrap img {
+  animation: kenburns 8s ease-out forwards;
   transition: transform 0.8s ease;
 }
 .historia__img-wrap:hover img { transform: scale(1.03); }
